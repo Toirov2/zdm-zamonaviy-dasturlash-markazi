@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Zamonaviy Dasturlash Markazi</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="ZDM__7_-removebg-preview.png?v=2" type="image/png" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;600&display=swap">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="rowHeader">
+          <div class="asaa">
+            <h1>ZDM</h1>
+            <div>
+              <p>Zamonaviy</p>
+              <p>Dasturlash</p>
+              <p>Markazi</p>
+            </div>
+          </div>
+          <button class="burger-menu" aria-label="Toggle Menu" onclick="toggleMenu()">
+            ☰
+          </button>
+          <ul>
+            <li><a href="#home" data-lang="navHome">Bosh sahifa</a></li>
+            <li><a href="#about" data-lang="navAbout">Biz haqimizda</a></li>
+            <li><a href="#services" data-lang="navServices">Xizmatlar</a></li>
+            <li><a href="#tariffs" data-lang="navTariffs">SMM Tariflari</a></li>
+            <li><a href="#projects" data-lang="navProjects">Loyihalar</a></li>
+            <li><a href="#contact" data-lang="navContact">Bog'lanish</a></li>
+
+          </ul>
+          <select
+            name="language"
+            id="language-switcher"
+            onchange="changeLanguage()"
+          >
+            <option value="uz">O'zb</option>
+            <option value="ru">Rus</option>
+            <option value="en">Eng</option>
+          </select>
+        </div>
+      </div>
+    </header>
+
+    <section class="intro-section" id="home">
+      <div class="intro-overlay">
+        <div class="container">
+          <div class="intro-content">
+            <h1 data-lang="introTitle">Kelajakni Biz Bilan Qur!</h1>
+            <p data-lang="introDesc">
+              Zamonaviy IT xizmatlar va ilg‘or texnologiyalar bilan
+              orzularingizni ro‘yobga chiqaramiz.
+            </p>
+            <button
+              onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})"
+              data-lang="contactButton"
+            >
+              Bog‘lanish
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <main>
+      <section id="about">
+        <div class="container">
+          <div class="rowMain">
+            <div class="left">
+              <h1 data-lang="aboutTitle">Biz haqimizda</h1>
+              <p data-lang="aboutDesc">
+                ZDM — Zamonaviy Dasturlash Markazi sifatida biz innovatsion IT
+                yechimlarni taqdim etamiz. Bizning jamoamiz tajribali
+                dasturchilar, dizaynerlar va loyiha menejerlaridan iborat. Biz
+                mijozlar ehtiyojlariga mos, yuqori sifatli x İzmatlar yaratamiz.
+              </p>
+            </div>
+            <div class="right">
+              <img src="./pexels-goumbik-574070.jpg" alt="About Us Image" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="services">
+        <div class="container">
+          <div class="seconmain">
+            <div class="service-card">
+              <h2>01</h2>
+              <h3 data-lang="service1">
+                Talab va yo'nalishingizni aniqlab, shunga mos xizmat yaratamiz.
+              </h3>
+            </div>
+            <div class="service-card">
+              <h2>02</h2>
+              <h3 data-lang="service2">
+                Dizayn va brendingga alohida e’tibor qaratamiz.
+              </h3>
+            </div>
+            <div class="service-card">
+              <h2>03</h2>
+              <h3 data-lang="service3">
+                Jarayonni siz real vaqt rejimida ko‘rib borishingiz mumkin.
+              </h3>
+            </div>
+            <div class="service-card">
+              <h2>04</h2>
+              <h3 data-lang="service4">
+                Doimiy texnik xizmat ko‘rsatamiz va yangilab boramiz.
+              </h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="tariffs">
+        <div class="container">
+          <div class="thirdMain">
+            <h2 data-lang="whyUsTitle">Nima uchun biz?</h2>
+            <p>
+              <strong data-lang="whyUsHighlight"
+                >Intellektual dasturiy ta'minot ishlab chiqaramiz.</strong
+              >
+            </p>
+            <p data-lang="whyUsDesc">
+              ZDM — innovatsiya va ilg‘or texnologiyalar bilan raqamli
+              rivojlanishga xizmat qiluvchi kompaniya.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="projects">
+        <div class="container">
+          <div class="lastmain">
+            <h1>Loyihalar</h1>
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./ZDM__7_-removebg-preview.png" alt="" /></div>
+                <div class="swiper-slide"><img src="./ZDM__7_-removebg-preview.png" alt="" /></div>
+                <div class="swiper-slide"><img src="./ZDM__7_-removebg-preview.png" alt="" /></div>
+                <div class="swiper-slide"><img src="./ZDM__7_-removebg-preview.png" alt="" /></div>
+                <div class="swiper-slide"><img src="./ZDM__7_-removebg-preview.png" alt="" /></div>
+                <div class="swiper-slide"><img src="./ZDM__7_-removebg-preview.png" alt="" /></div>
+                <div class="swiper-slide"><img src="./ZDM__7_-removebg-preview.png" alt="" /></div>
+                <div class="swiper-slide"><img src="./ZDM__7_-removebg-preview.png" alt="" /></div>
+                <div class="swiper-slide"><img src="./ZDM__7_-removebg-preview.png" alt="" /></div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="s" id="contact">
+        <div class="container">
+          <div class="ss">
+            <h1 class="as" data-lang="contactTitle">Bog'lanish Uchun</h1>
+            <div class="div">
+              <a
+                href="https://t.me/toirovvasad"
+                target="_blank"
+                class="icon telegram"
+                aria-label="Telegram"
+              >
+                <img
+                  src="./Telegram-Logo-PNG-Image-removebg-preview.png"
+                  alt="Telegram"
+                />
+              </a>
+              <a
+                href="tel:+998938573311"
+                class="icon phone"
+                aria-label="Telefon"
+              >
+                <img src="./6815116-removebg-preview.png" alt="Telefon" />
+              </a>
+              <a
+                href="https://instagram.com"
+                target="_blank"
+                class="icon instagram"
+                aria-label="Instagram"
+              >
+                <img src="./images-removebg-preview.png" alt="Instagram" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p data-lang="footer">
+          &copy; 2025 Zamonaviy Dasturlash Markazi. Barcha huquqlar
+          himoyalangan.
+        </p>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
